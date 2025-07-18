@@ -1,15 +1,15 @@
 # Rise Together
 
-**Rise Together** is a full-stack crowdfunding platform built using the MERN stack (MongoDB, Express.js, React.js, Node.js) and Socket.io. It enables entrepreneurs to showcase their ideas and receive financial support from interested backers.
+**Rise Together** is a full-stack crowdfunding platform built using the MERN stack (MongoDB, Express.js, React.js, Node.js) and Socket.io. It enables entrepreneurs to showcase their ideas and receive financial support from interested backers.It connects entrepreneurs with investors. Entrepreneurs can post project ideas, and investors can directly chat with them in real-time. Each investor also has a dashboard where they can view all the projects they’ve invested in, making it easy to track their contributions.
 
 ## 🚀 Features
-
-- User authentication & authorization (JWT-based)
-- Entrepreneur profile management
-- Project creation with funding goals
-- Project feed with search and filter
-- Real-time notifications (Socket.io)
-- Admin panel to manage users and projects
+- JWT-based user authentication and authorization
+- Separate dashboards for entrepreneurs and investors
+- Project creation with funding details and descriptions
+- Project feed with search and filtering
+- Real-time messaging between investors and entrepreneurs (via Socket.io)
+- Investor dashboard to track their investments and funded projects
+- Entrepreneurs can see which investors have funded their projects and how much equity each holds
 
 ## 🛠️ Tech Stack
 
