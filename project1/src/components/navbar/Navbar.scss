@@ -1,0 +1,197 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(18, 18, 18, 0.9);
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  transition: background 0.3s ease;
+  backdrop-filter: blur(10px);
+
+  &.active {
+    background: white;
+    color: black;
+
+    .links span,
+    .menuLink {
+      color: #333;
+    }
+
+    .logo .text {
+      color: #1dbf73;
+    }
+
+    button {
+      background-color: white !important;
+      color: #1dbf73 !important;
+      border: 1px solid #1dbf73 !important;
+
+      &:hover {
+        background-color: #1dbf73 !important;
+        color: white !important;
+      }
+    }
+  }
+
+  .container {
+    width: 1400px;
+    max-width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0;
+
+    .logo {
+      font-size: 28px;
+      font-weight: 700;
+
+      .text {
+        color: white;
+        background: linear-gradient(to right, #1dbf73, #00c8ff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .dot {
+        color: #1dbf73;
+        font-weight: bold;
+      }
+    }
+
+    .links {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+
+      span {
+        cursor: pointer;
+        transition: color 0.3s;
+        white-space: nowrap;
+
+        &:hover {
+          color: #1dbf73;
+        }
+      }
+
+      .user {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+        position: relative;
+
+        img {
+          width: 34px;
+          height: 34px;
+          border-radius: 50%;
+          object-fit: cover;
+          border: 2px solid #1dbf73;
+        }
+
+        .defaultIcon {
+          width: 34px;
+          height: 34px;
+          border-radius: 50%;
+          background-color: #eee;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 2px solid #1dbf73;
+
+          svg {
+            width: 20px;
+            height: 20px;
+            color: #555;
+          }
+        }
+
+        span {
+          font-weight: 500;
+        }
+
+        .options {
+          position: absolute;
+          top: 50px;
+          right: 0;
+          background-color: white;
+          color: #333;
+          border: 1px solid #ddd;
+          border-radius: 10px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          padding: 16px;
+          z-index: 999;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          font-weight: 400;
+          width: 200px;
+
+          .link {
+            transition: 0.3s;
+
+            &:hover {
+              color: #1dbf73;
+            }
+          }
+        }
+      }
+
+      .link {
+        color: inherit;
+        text-decoration: none;
+        transition: 0.3s;
+
+        &:hover {
+          color: #1dbf73;
+        }
+
+        button {
+          padding: 10px 20px;
+          border-radius: 6px;
+          border: none;
+          background: linear-gradient(to right, #1dbf73, #00c8ff);
+          color: white;
+          font-weight: 600;
+          cursor: pointer;
+          transition: 0.3s ease;
+
+          &:hover {
+            background: #17a562;
+          }
+        }
+      }
+    }
+  }
+
+  hr {
+    width: 100%;
+    height: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 0;
+  }
+
+  .menu {
+    width: 1400px;
+    max-width: 95%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #ccc;
+
+    .menuLink {
+      transition: 0.3s;
+
+      &:hover {
+        color: #1dbf73;
+      }
+    }
+  }
+}
